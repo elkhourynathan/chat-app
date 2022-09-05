@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock %} {% block content
+%}
+  <h1 class="text-center">Chat Room</h1>
+  <div class="messages">
+    <h2>Hello {{ user.displayName }}</h2>
+    <input placeholder="Enter your message." id="userMessage"/>
+    <br></br>
+    <button type="submit" class="btn btn-primary" id="messageButton">Submit</button>
+    
+    <br></br>
+    <ul class="list-group" id="displayMessage">
+    </ul>
+  </div>
+{% endblock%}
